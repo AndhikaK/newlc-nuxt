@@ -2,6 +2,7 @@
   <div>
     <nav>
       This is a nav
+      <Button>Test</Button>
     </nav>
     <slot />
   </div>
