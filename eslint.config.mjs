@@ -5,6 +5,7 @@ export default withNuxt({
   rules: {
     // Other rules
     'vue/require-default-prop': 'off',
+    '@stylistic/semi': 'off',
   },
 })
 // Your custom configs here

@@ -1,10 +1,7 @@
-<template>
-  <div class="text-red-500">
-    This is index page
-  </div>
-</template>
-
 <script lang="ts" setup>
+import { DialogRoot } from 'radix-vue';
+import DialogContent from '~/components/ui/dialog/DialogContent.vue';
+
 useHead({
   title: 'NewLC',
 })
@@ -12,4 +9,14 @@ useHead({
 definePageMeta({
   layout: 'auth',
 })
+
+const loginModalRef = ref(true)
 </script>
+
+<template>
+  <DialogRoot v-model:open="true">
+    <DialogContent>
+      <div>test</div>
+    </DialogContent>
+  </DialogRoot>
+</template>
