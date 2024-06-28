@@ -6,6 +6,6 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'auth'
+  layout: 'auth',
 })
 </script>

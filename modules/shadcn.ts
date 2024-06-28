@@ -3,94 +3,94 @@ import {
   addComponent,
   addComponentsDir,
   tryResolveModule,
-} from "nuxt/kit";
+} from 'nuxt/kit'
 
 export interface ShadcnVueOptions {
   /**
    * Prefix for all the imported component
    */
-  prefix: string;
+  prefix: string
 
   /**
    * Directory that the component lives in.
    * @default "~/components/ui"
    */
-  componentDir: string;
+  componentDir: string
 }
 
 export default defineNuxtModule<ShadcnVueOptions>({
   defaults: {
-    prefix: "Ui",
-    componentDir: "~/components/ui",
+    prefix: 'Ui',
+    componentDir: '~/components/ui',
   },
   meta: {
-    name: "ShadcnVue",
-    configKey: "shadcn",
-    version: "0.0.1",
+    name: 'ShadcnVue',
+    configKey: 'shadcn',
+    version: '0.0.1',
     compatibility: {
-      nuxt: ">=3.9.0",
+      nuxt: '>=3.9.0',
       bridge: false,
     },
   },
   async setup({ componentDir, prefix }) {
-    const isVeeValidateExist = await tryResolveModule("vee-validate");
+    const isVeeValidateExist = await tryResolveModule('vee-validate')
 
     addComponentsDir(
       {
         path: componentDir,
-        extensions: [".vue"],
+        extensions: ['.vue'],
         prefix,
         pathPrefix: false,
       },
       {
         prepend: true,
-      }
-    );
+      },
+    )
 
     if (isVeeValidateExist !== undefined) {
       addComponent({
-        filePath: "vee-validate",
-        export: "Form",
+        filePath: 'vee-validate',
+        export: 'Form',
         name: `${prefix}Form`,
         priority: 999,
-      });
+      })
 
       addComponent({
-        filePath: "vee-validate",
-        export: "Field",
+        filePath: 'vee-validate',
+        export: 'Field',
         name: `${prefix}FormField`,
         priority: 999,
-      });
+      })
     }
 
     addComponent({
-      filePath: "radix-vue",
-      export: "PaginationRoot",
+      filePath: 'radix-vue',
+      export: 'PaginationRoot',
       name: `${prefix}Pagination`,
       priority: 999,
-    });
+    })
 
     addComponent({
-      filePath: "radix-vue",
-      export: "PaginationList",
+      filePath: 'radix-vue',
+      export: 'PaginationList',
       name: `${prefix}PaginationList`,
       priority: 999,
-    });
+    })
 
     addComponent({
-      filePath: "radix-vue",
-      export: "PaginationListItem",
+      filePath: 'radix-vue',
+      export: 'PaginationListItem',
       name: `${prefix}PaginationListItem`,
       priority: 999,
-    });
+    })
   },
-});
+})
 
-declare module "@nuxt/schema" {
+declare module '@nuxt/schema' {
   interface NuxtConfig {
-    shadcn?: ShadcnVueOptions;
+    shadcn?: ShadcnVueOptions
   }
   interface NuxtOptions {
-    shadcn?: ShadcnVueOptions;
+    shadcn?: ShadcnVueOptions
   }
 }
