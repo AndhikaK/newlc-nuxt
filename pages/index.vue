@@ -5,6 +5,10 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: 'NewLC',
+})
+
 definePageMeta({
   layout: 'auth',
 })

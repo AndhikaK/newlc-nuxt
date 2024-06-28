@@ -2,7 +2,7 @@
   "files.autoSave": "onFocusChange",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
-    "source.fixAll": "never"
+    "source.fixAll": "explicit"
   },
   "eslint.format.enable": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",

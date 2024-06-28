@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     },
   },
 
+  app: {
+    head: {
+      title: 'LanguageCenter - University of Lampung',
+    },
+  },
+
   modules: [
     '@nuxt/fonts',
     '@nuxtjs/tailwindcss',
