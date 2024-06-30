@@ -70,7 +70,10 @@ definePageMeta({
             to="/auth/login"
             :replace="true"
           >
-            <Button variant="link">
+            <Button
+              variant="link"
+              size="default"
+            >
               Kembali ke Login
             </Button>
           </NuxtLink>

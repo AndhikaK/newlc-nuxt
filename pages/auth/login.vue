@@ -40,33 +40,49 @@ definePageMeta({
           />
         </div>
 
-        <div class="flex flex-row justify-between">
-          <NuxtLink
-            to="/auth/forgot-password"
-          >
-            <Button
-              variant="link"
-              class="m-0 p-0 h-fit"
+        <div class="grid gap-3">
+          <div class="flex flex-row justify-between">
+            <NuxtLink
+              to="/auth/forgot-password"
             >
-              Lupa password?
-            </Button>
-          </NuxtLink>
-          <NuxtLink
-            to="/auth/register"
-            :replace="true"
-          >
-            <Button
-              variant="link"
-              class="m-0 p-0 h-fit"
+              <Button
+                variant="link"
+              >
+                Lupa password?
+              </Button>
+            </NuxtLink>
+            <NuxtLink
+              to="/auth/register"
+              :replace="true"
             >
-              Belum punya akun?
-            </Button>
-          </NuxtLink>
-        </div>
+              <Button
+                variant="link"
+              >
+                Belum punya akun?
+              </Button>
+            </NuxtLink>
+          </div>
 
-        <Button class="w-full">
-          Login
-        </Button>
+          <Button class="w-full">
+            Login
+          </Button>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span class="text-center font-semibold">Panduan Penggunaan</span>
+
+          <div class="flex flex-row justify-around">
+            <Button
+              variant="link"
+            >
+              Web
+            </Button>
+            <Button
+              variant="link"
+            >
+              Mobile
+            </Button>
+          </div>
+        </div>
       </CardContent>
     </Card>
   </div>

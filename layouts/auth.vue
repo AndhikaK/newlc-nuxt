@@ -11,7 +11,7 @@
       </div>
     </nav>
 
-    <div class="h-full w-full z-10">
+    <div class="h-full w-full z-10 pb-10">
       <slot />
     </div>
     <div
