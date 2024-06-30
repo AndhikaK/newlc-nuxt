@@ -1,22 +1,9 @@
 <script lang="ts" setup>
-import { DialogRoot } from 'radix-vue';
-import DialogContent from '~/components/ui/dialog/DialogContent.vue';
-
-useHead({
-  title: 'NewLC',
-})
-
-definePageMeta({
-  layout: 'auth',
-})
-
-const loginModalRef = ref(true)
+await navigateTo('/auth/login')
 </script>
 
 <template>
-  <DialogRoot v-model:open="true">
-    <DialogContent>
-      <div>test</div>
-    </DialogContent>
-  </DialogRoot>
+  <div class="flex flex-col justify-center items-center h-full mx-6">
+    <!--  -->
+  </div>
 </template>

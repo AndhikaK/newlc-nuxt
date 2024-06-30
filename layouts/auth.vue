@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-full min-h-screen grid grid-rows-[auto_1fr]">
+  <div class="w-screen h-screen grid grid-rows-[auto_1fr]">
     <nav class="px-10 py-3 flex flex-row justify-between w-full bg-white shadow z-10">
       <div class="flex flex-row gap-4 items-center">
         <img
@@ -15,7 +15,7 @@
       <slot />
     </div>
     <div
-      class="absolute h-screen w-screen blur-sm bg-slate-100 top-0 left-0 z-0 bg-layout bg-cover bg-center"
+      class="absolute h-screen w-screen blur-md bg-slate-100 top-0 left-0 z-0 bg-layout bg-cover bg-center"
     />
   </div>
 </template>

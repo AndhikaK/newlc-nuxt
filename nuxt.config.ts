@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     head: {
       title: 'LanguageCenter - University of Lampung',
     },
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   modules: [
