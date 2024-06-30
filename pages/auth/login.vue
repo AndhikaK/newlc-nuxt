@@ -74,11 +74,19 @@ definePageMeta({
             <Button
               variant="link"
             >
+              <Icon
+                name="ic:outline-play-circle-filled-white"
+                class="mr-2"
+              />
               Web
             </Button>
             <Button
               variant="link"
             >
+              <Icon
+                name="ic:outline-play-circle-filled-white"
+                class="mr-2"
+              />
               Mobile
             </Button>
           </div>

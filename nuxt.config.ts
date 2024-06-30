@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxt/eslint',
+    '@nuxt/icon',
   ],
   fonts: {
     families: [{ name: 'Poppins', provider: 'google' }],
