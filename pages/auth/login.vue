@@ -71,24 +71,36 @@ definePageMeta({
           <span class="text-center font-semibold">Panduan Penggunaan</span>
 
           <div class="flex flex-row justify-around">
-            <Button
-              variant="link"
+            <NuxtLink
+              to="https://youtu.be/AF68qYztRh0"
+              target="_blank"
             >
-              <Icon
-                name="ic:outline-play-circle-filled-white"
-                class="mr-2"
-              />
-              Web
-            </Button>
-            <Button
-              variant="link"
+              <Button
+                variant="link"
+              >
+                <Icon
+                  name="ic:outline-play-circle-filled-white"
+                  class="mr-2"
+                />
+                Web
+              </Button>
+            </NuxtLink>
+
+            <NuxtLink
+              to="https://youtu.be/QXs5ajm91Ts"
+              target="_blank"
             >
-              <Icon
-                name="ic:outline-play-circle-filled-white"
-                class="mr-2"
-              />
-              Mobile
-            </Button>
+
+              <Button
+                variant="link"
+              >
+                <Icon
+                  name="ic:outline-play-circle-filled-white"
+                  class="mr-2"
+                />
+                Mobile
+              </Button>
+            </NuxtLink>
           </div>
         </div>
       </CardContent>
