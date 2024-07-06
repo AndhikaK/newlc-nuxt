@@ -25,6 +25,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.17",
     "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "autoprefixer": "^10.4.19",
