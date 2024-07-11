@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useQuery } from '@tanstack/vue-query';
+import axios from 'axios';
 import Button from '~/components/ui/button/Button.vue';
 import Card from '~/components/ui/card/Card.vue';
 import CardContent from '~/components/ui/card/CardContent.vue';
@@ -12,6 +14,13 @@ useHead({
 definePageMeta({
   layout: 'auth',
 })
+
+const pokemonsQuery = useQuery({
+  queryKey: ['pokemons'],
+  queryFn: () => axios.get('https://pokeapi.co/api/v2/pokemon'),
+})
+
+console.log('this is test', pokemonsQuery.data)
 </script>
 
 <template>

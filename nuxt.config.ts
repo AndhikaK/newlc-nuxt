@@ -24,12 +24,16 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/icon',
   ],
+
   fonts: {
     families: [{ name: 'Poppins', provider: 'google' }],
   },
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
+
+  compatibilityDate: '2024-07-11',
 })
